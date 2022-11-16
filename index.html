@@ -60,7 +60,7 @@
          <div class="content text-center text-md-left">
             <h3>let us brighten your smile</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium itaque, quasi aliquam alias tempora voluptatibus.</p>
-            <a href="#contact" class="link-btn">make appointment</a>
+            <a href="tel:+639985666005" class="link-btn">make appointment</a>
          </div>
       </div>
 
@@ -241,14 +241,8 @@
 
    <h1 class="heading">make appointment</h1>
 
-   <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-      <?php 
-         if(isset($message)){
-            foreach($message as $message){
-               echo '<p class="message">'.$message.'</p>';
-            }
-         }
-      ?>
+   <form>
+      
       <span>Full name :</span>
       <input type="text" name="name" placeholder="Enter your name" class="box" required>
       <span>Email :</span>
